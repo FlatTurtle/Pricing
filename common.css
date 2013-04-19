@@ -1,27 +1,27 @@
 /*
-  Common styles and overrides. Will be exported with the zip file download.
+    Common styles and overrides. Will be exported with the zip file download.
 */
 
 /* Make fonts behave on Macs */
 * {
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
 /* Make Icons look better */
 [class^="icon-"]::before, [class*=" icon-"]::before {
-  vertical-align: baseline;
-  line-height: 1em;
-  color: inherit;
+    vertical-align: baseline;
+    line-height: 1em;
+    color: inherit;
 }
 i.icon{
-  text-align: center;
-  background-image: none;
+    text-align: center;
+    background-image: none;
 }
 
 /* Centering elements */
 body .pull-center{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

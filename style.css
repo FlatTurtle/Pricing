@@ -1,224 +1,109 @@
-html {
-  background-color: #efede8;
+html, body{
+    font-family: "Soho Gothic W01 Regular", sans-serif;
+    height: 100%;
+    background-color: #ededed;
+    padding: 0px;
+    width: 100%;
 }
-body {
-  background: transparent;
-}
+
 #page-wrapper {
-  position: relative;
-  width: 1050px;
-  /* centers the document */
-  margin: 0 auto;
-  /*
-  hides anything drawn off canvas.
-  remove overflow and height to see things drawn off canvas.
-  */
-  overflow: hidden;
-  height: 2199px;
+    position: relative;
+    width: 100%;
 }
-/* This makes absolutely positioned elements like p, h1,
-     and some bootstrap elements placed properly. */
- #absolute-wrapper p, #absolute-wrapper h1, #absolute-wrapper h2, #absolute-wrapper h3, #absolute-wrapper h4, #absolute-wrapper h5, #absolute-wrapper h6 {
-  margin-top: 0 !important;
+
+.wrapper {
+    position: relative;
+    width: 1050px;
+    margin: 0 auto;
 }
-/* Set floating body text margins to 0 */
-[class*="dom-paragraph"] p {
-  margin: 0 0 10px 0;
+
+header{
+    border-bottom: 10px solid #0578bd;
+    background: #fff;
+    height: 120px;
+    line-height: 120px;
 }
-#absolute-wrapper {
-  position: relative;
-  width: 1050px;
-  margin: 0 auto;
-  height: 1px;
+
+header .ft-icon {
+    display: inline-block;
+    -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.14902);
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.14902);
+    -o-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.14902);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.14902);
+    width: 60px;
+    height: 68px;
 }
-#absolute-wrapper .rectangle.rectangle-1 {
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  -o-box-shadow: none;
-  box-shadow: none;
+
+header .ft-icon img{
+    width: 49px;
+    height: 42px;
+    position: absolute;
+    top: 17px;
+    left: 6px;
 }
-#absolute-wrapper .rectangle.rectangle-2 {
-  border-radius: 0px 0px 2px 2px;
+
+header h1{
+    display: inline-block;
+    font-weight: normal;
+    margin-left: 25px;
+    color:#0578bd;
+    font-size: 35px;
 }
-#absolute-wrapper .rectangle {
-  border: none;
-  position: absolute;
+
+
+.wrapper .well{
+    margin-top: 2%;
+    width: 49%;
+    float:left;
+    font-size: 15px;
+    padding:0px;
+    border:0px none;
 }
-#absolute-wrapper .rectangle.rectangle-3 {
-  background: #ffffff;
+
+.wrapper .well>div{
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 2% 4%;
 }
-#absolute-wrapper .rectangle.rectangle-4 {
-  background: #2457a7;
+
+.wrapper .well:first-child{
+    margin-right: 2%;
 }
-#absolute-wrapper .rectangle.rectangle-5 {
-  border-radius: 0px;
-  width: 1114px;
+
+.wrapper .well .heading {
+    font-weight: normal;
+    font-size: 31px;
 }
-#absolute-wrapper .rectangle.rectangle-6 {
-  background: rgba(255, 255, 255, 0.729412);
-  width: 1068px;
-  height: 87px;
-  top: -6px;
-  left: -17px;
+
+.wrapper .well .badge {
+    padding: 1px 9px 2px 9px;
+    background: #39990b;
+    text-align: right;
 }
-#absolute-wrapper .rectangle.rectangle-1.rectangle-2.rectangle-6 .rectangle.rectangle-2.rectangle-3 {
-  -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.14902);
-  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.14902);
-  -o-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.14902);
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.14902);
-  width: 60px;
-  height: 68px;
-  top: 4px;
-  left: 72px;
+
+footer{
+    background: #2257a6;
+    border-top: 10px solid #0578bd;
+    display: block;
+    position: relative;
+    font-size: 15px;
+    color: #fff;
+    line-height: 19px;
+    text-align: right;
+    padding: 20px 0px;
 }
-#absolute-wrapper .rectangle.rectangle-1.rectangle-2.rectangle-6 .rectangle.rectangle-2.rectangle-3 .image {
-  border-radius: 0px;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  -o-box-shadow: none;
-  box-shadow: none;
-  width: 49px;
-  height: 42px;
-  position: absolute;
-  top: 17px;
-  left: 6px;
+
+footer .logo {
+    position: absolute;
+    max-height: 100px;
+    left: 2px;
+    top: 0px;
 }
-#absolute-wrapper .rectangle.rectangle-1.rectangle-2.rectangle-6 .heading {
-  font-weight: normal;
-  font-size: 23px;
-  font-family:"droid sans";
-  width: 202px;
-  height: 42px;
-  position: absolute;
-  top: 26px;
-  left: 144px;
+
+.clear{
+    clear: both;
 }
-#absolute-wrapper .rectangle.rectangle-1.rectangle-4.rectangle-5.rectangle-7 {
-  height: 70px;
-  top: 80px;
-  left: -56px;
-}
-#absolute-wrapper .well {
-  position: absolute;
-}
-#absolute-wrapper .well.well-1 {
-  width: 394px;
-  height: 500px;
-  top: 171px;
-  left: 579px;
-}
-#absolute-wrapper .well.well-1 .heading {
-  font-family:"oswald";
-  font-weight: normal;
-  font-size: 31px;
-}
-#absolute-wrapper .well.well-1 .table.table-condensed thead tr th {
-  font-size: 15px;
-}
-#absolute-wrapper .well.well-1 .table.table-condensed tbody tr td {
-  font-size: 15px;
-}
-#absolute-wrapper .well.well-1 .table.table-condensed tbody tr td .badge {
-  padding: 1px 9px 2px 9px;
-  background: #39990b;
-  text-align: right;
-}
-#absolute-wrapper .well.well-2 {
-  width: 440px;
-  height: 458px;
-  top: 173px;
-  left: 39px;
-}
-#absolute-wrapper .well.well-2 .heading {
-  font-family:"oswald";
-  font-weight: normal;
-  font-size: 31px;
-}
-#absolute-wrapper .well.well-2 .table.table-condensed thead tr th {
-  font-size: 15px;
-}
-#absolute-wrapper .well.well-2 .table.table-condensed tbody tr td.td-1 {
-  font-size: 15px;
-}
-#absolute-wrapper .well.well-2 .table.table-condensed tbody tr .td-1 .icon.icon-ok-sign {
-  color: #000000;
-}
-#absolute-wrapper .well.well-2 .table.table-condensed tbody tr .td-1 .icon.icon-ok-sign.icon-ok-sign-1 {
-  font-size: 14px;
-  height: 14px;
-  width: 14px;
-}
-#absolute-wrapper .well.well-2 .table.table-condensed tbody tr .td-1 .badge {
-  padding: 1px 9px 2px 9px;
-  background: #39990b;
-}
-#absolute-wrapper .well.well-2 .table.table-condensed tbody tr .td-1 .badge.badge-1 {
-  text-align: center;
-}
-#absolute-wrapper .well.well-2 .table.table-condensed tbody tr .td-1 .badge.badge-2 {
-  text-align: right;
-}
-#absolute-wrapper .well.well-2 .table.table-condensed tbody tr td .icon.icon-ok-sign.icon-ok-sign-2 {
-  color: #000000;
-}
-#absolute-wrapper .well.well-2 .table.table-condensed tbody tr td .badge.badge-3 {
-  padding: 1px 9px 2px 9px;
-  background: #39990b;
-  text-align: center;
-}
-#absolute-wrapper .dom-paragraph.dom-body-text {
-  overflow: hidden;
-  width: 483px;
-  height: 23px;
-  position: absolute;
-  top: 700px;
-  left: 8px;
-}
-#absolute-wrapper .dom-paragraph.dom-body-text p {
-  background: rgba(0, 0, 0, 0);
-  color: #333333;
-  font-family:"Arial";
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: none;
-  text-align: left;
-  line-height: 18px;
-  text-shadow: none;
-  font-size: 12px;
-  border: none;
-}
-#absolute-wrapper .rectangle.rectangle-1.rectangle-4.rectangle-5.rectangle-8 {
-  height: 26px;
-  top: 725px;
-  left: 0px;
-}
-#absolute-wrapper .rectangle.rectangle-1.rectangle-3.rectangle-5 {
-  height: 132px;
-  top: 751px;
-  left: -60px;
-}
-#absolute-wrapper .rectangle.rectangle-1.rectangle-3.rectangle-5 .dom-body-text.paragraph {
-  width: 1010px;
-  height: 110px;
-  position: absolute;
-  top: 10px;
-  left: 79px;
-}
-#absolute-wrapper .rectangle.rectangle-1.rectangle-3.rectangle-5 .dom-body-text.paragraph p {
-  padding: 10px 0px 0px 0px;
-  text-shadow: none;
-  font-family:"droid sans";
-  text-align: right;
-  color: #2457a7;
-  line-height: 19px;
-  font-size: 15px;
-}
-#absolute-wrapper .image {
-  position: absolute;
-}
-#absolute-wrapper .image.image-1 {
-  width: 544px;
-  height: 200px;
-  top: 722px;
-  left: 2px;
+
+.note{
+    color: #aaa;
 }
