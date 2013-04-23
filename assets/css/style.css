@@ -101,14 +101,16 @@ footer{
     background: #2257a6;
     border-top: 10px solid #0578bd;
     display: block;
-    position: relative;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
     font-size: 15px;
     color: #fff;
     line-height: 19px;
     text-align: right;
     padding: 20px 0px;
     height: 100px;
-    margin-top: -150px;
 }
 
 footer .logo {
